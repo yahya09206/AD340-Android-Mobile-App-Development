@@ -1,5 +1,6 @@
 package com.example.yhussein.helloworld;
 
+import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -22,7 +23,10 @@ public class MainActivityTest {
     public void fullinfo(){
         //check to see if text matches from main screen
         onView(withId(R.id.textView))
-                .check(matches(withText(R.string.fullinfo)));
+                .check(matches(withText(R.string.hello)));
+        //check to see if text string matches the one on the menu
+        onView(withId(R.id.textView))
+                .check(matches(withText(R.string.info)));
     }
 
 }
