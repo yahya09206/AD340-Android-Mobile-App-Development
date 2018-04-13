@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HelloWorld</string>
     <string name="fullinfo">Yahya Hussein. Created 4-6-2018. I love shrimp pad thai(spicy).</string>
+    <string name="info">Show Info</string>
 </resources>
