@@ -1,7 +1,3 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
-    <string name="hello">Hello World!</string>
-    <string name="name">Yahya Hussein. Created 4-6-2018</string>
-    <string name="fact">I love shrimp pad thai(spicy)</string>
     <string name="fullinfo">Yahya Hussein. Created 4-6-2018. I love shrimp pad thai(spicy).</string>
 </resources>

@@ -8,13 +8,13 @@ import android.widget.TextView;
 //option + enter for creating test file
 public class MainActivity extends AppCompatActivity {
 
-    private TextView text;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        text = findViewById(R.id.text);
+        textView = findViewById(R.id.textView);
     }
 
 }
