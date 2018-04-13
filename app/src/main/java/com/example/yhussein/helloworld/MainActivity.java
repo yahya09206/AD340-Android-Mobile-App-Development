@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+//option + enter for creating test file
 public class MainActivity extends AppCompatActivity {
 
     private TextView text;
