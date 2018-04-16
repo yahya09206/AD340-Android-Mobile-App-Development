@@ -1,0 +1,2 @@
+[![CircleCI](https://circleci.com/gh/yahya09206/AD340-Android-Mobile-App-Development.svg?style=svg)](https://circleci.com/gh/yahya09206/AD340-Android-Mobile-App-Development)
+[![codecov](https://codecov.io/gh/yahya09206/AD340-Android-Mobile-App-Development/branch/master/graph/badge.svg)](https://codecov.io/gh/yahya09206/AD340-Android-Mobile-App-Development)
