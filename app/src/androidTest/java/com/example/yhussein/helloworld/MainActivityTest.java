@@ -13,6 +13,8 @@ import static android.support.test.espresso.Espresso.openActionBarOverflowOrOpti
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static android.support.test.espresso.action.ViewActions.click;
+
 
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
@@ -28,6 +30,7 @@ public class MainActivityTest {
 
         //onclick
         openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
+        onView(withText(R.string.full_info)).perform(click());
 
         //check to see if text string matches the one on the menu
         onView(withId(R.id.textView))
