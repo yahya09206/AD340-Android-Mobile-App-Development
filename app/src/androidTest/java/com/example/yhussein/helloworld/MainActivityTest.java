@@ -30,6 +30,7 @@ public class MainActivityTest {
 
         //onclick
         openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
+        //show full info when menu item is clicked
         onView(withText(R.string.full_info)).perform(click());
 
         //check to see if text string matches the one on the menu
