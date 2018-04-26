@@ -34,7 +34,7 @@ public class MainActivityTest {
     public void fullInfo(){
 
         ViewInteraction nameET = onView(
-                allOf(withId(R.id.email), withText("Email"), isDisplayed()));
+                allOf(withId(R.id.username), withText("Username"), isDisplayed()));
         nameET.check(matches(isDisplayed()));
     }
 
