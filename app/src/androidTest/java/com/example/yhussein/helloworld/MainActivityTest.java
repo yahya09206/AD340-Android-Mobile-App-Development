@@ -24,18 +24,7 @@ public class MainActivityTest {
 
     @Test
     public void fullinfo(){
-        //check to see if text matches from main screen
-        onView(withId(R.id.textView))
-                .check(matches(withText(R.string.hello)));
 
-        //onclick
-        openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
-        //show full info when menu item is clicked
-        onView(withText(R.string.full_info)).perform(click());
-
-        //check to see if text string matches the one on the menu
-        onView(withId(R.id.textView))
-                .check(matches(withText(R.string.info)));
     }
 
 }
