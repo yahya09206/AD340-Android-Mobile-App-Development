@@ -6,6 +6,7 @@
     <string name="usernameerror">Username required!</string>
     <string name="emailerror">Invalid email!</string>
     <string name="username">username</string>
+    <string name="thanks">Thanks for Signing Up</string>
     <!--<string name="hello">Hello World</string>-->
     <!--<string name="full_info">Full Info</string>-->
     <!--<string name="info">Yahya Hussein. Created 4-6-2018. I love shrimp pad thai(spicy).</string>-->

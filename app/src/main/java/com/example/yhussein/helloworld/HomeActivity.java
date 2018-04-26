@@ -12,13 +12,13 @@ import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity {
 
-    TextView thanksTv;
+    TextView thanks;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        thanksTv = findViewById(R.id.thanks);
+        thanks = findViewById(R.id.thanks);
 
         //get intent used to start activity
         Intent intent = this.getIntent();
@@ -26,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         String username = intent.getStringExtra(getString(R.string.username));
 
         //set text
-        thanksTv.setText(getString(R.string.thankyou)+username+"!");
+        thanks.setText(getString(R.string.thanks) + " " +username+"!");
 
         //
 
