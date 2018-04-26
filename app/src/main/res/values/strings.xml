@@ -1,16 +1,19 @@
 <resources>
     <string name="app_name">HelloWorld</string>
-    <string name="dob">MM/dd/yyyy</string>
+    <string name="filename">Yahya 04/25/2018</string>
     <string name="doberr">You are not allowed to signup, you\'re under 18 according to your date of birth!</string>
     <string name="dobmsg">You entered an invalid date of birth!</string>
     <string name="usernameerror">Username required!</string>
     <string name="emailerror">Invalid email!</string>
-    <string name="username">username</string>
     <string name="thanks">Thanks for Signing Up</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="age">Age</string>
+    <string name="dob">Date of Birth (mm/dd/yyyy)</string>
+    <string name="submit">Submit</string>
+    <string name="createnew">Create New Account</string>
     <!--<string name="hello">Hello World</string>-->
     <!--<string name="full_info">Full Info</string>-->
     <!--<string name="info">Yahya Hussein. Created 4-6-2018. I love shrimp pad thai(spicy).</string>-->
-
-
-
 </resources>
