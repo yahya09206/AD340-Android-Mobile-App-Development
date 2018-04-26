@@ -34,18 +34,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //init
-        nameET = findViewById(R.id.name);
-        emailET =  findViewById(R.id.email);
-        usernameET = findViewById(R.id.username);
-        ageET = findViewById(R.id.age);
-        dobET = findViewById(R.id.dob);
+        nameET = (EditText) findViewById(R.id.name);
+        emailET = (EditText) findViewById(R.id.email);
+        usernameET = (EditText) findViewById(R.id.username);
+        ageET = (EditText) findViewById(R.id.age);
+        dobET = (EditText) findViewById(R.id.dob);
 
 
     }
 
     public void onSubmit(View view) {
         //validate date
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat(getString(R.string.dob));
         String dateStr = dobET.getText().toString();
         try
         {
@@ -54,14 +54,14 @@ public class MainActivity extends AppCompatActivity {
             int years = getDiffYears(dob, now);
             if(years < 18)
             {
-                Toast.makeText(this, R.string.dob, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.doberr, Toast.LENGTH_LONG).show();
                 return;
             }
 
         }
         catch (Exception e)
         {
-            Toast.makeText(this, R.string.doberr, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.dobmsg, Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         String username = usernameET.getText().toString();
         if(username.length() == 0)
         {
-            Toast.makeText(this, R.string.usernamerr, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.usernameerror, Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         java.util.regex.Matcher m = p.matcher(emailET.getText().toString());
         if(!m.matches())//invalid
         {
-            Toast.makeText(this, R.string.emailerr, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.emailerror, Toast.LENGTH_LONG).show();
             return;
         }
 
