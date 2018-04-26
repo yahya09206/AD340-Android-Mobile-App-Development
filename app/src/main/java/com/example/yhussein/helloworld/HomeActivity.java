@@ -18,15 +18,15 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        thanksTv = (TextView) findViewById(R.id.thanks);
+        thanksTv = findViewById(R.id.thanks);
 
         //get intent used to start activity
         Intent intent = this.getIntent();
         //get username
-        String username = intent.getStringExtra("username");
+        String username = intent.getStringExtra(getString(R.string.username));
 
         //set text
-        thanksTv.setText("Thanks for Signing Up "+username+"!");
+        thanksTv.setText(getString(R.string.thankyou)+username+"!");
 
         //
 
