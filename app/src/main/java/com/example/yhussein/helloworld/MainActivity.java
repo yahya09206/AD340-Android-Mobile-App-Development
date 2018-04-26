@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //init
-        nameET = (EditText) findViewById(R.id.name);
-        emailET = (EditText) findViewById(R.id.email);
-        usernameET = (EditText) findViewById(R.id.username);
-        ageET = (EditText) findViewById(R.id.age);
-        dobET = (EditText) findViewById(R.id.dob);
+        nameET =  findViewById(R.id.name);
+        emailET =  findViewById(R.id.email);
+        usernameET =  findViewById(R.id.username);
+        ageET =  findViewById(R.id.age);
+        dobET = findViewById(R.id.dob);
 
 
     }
