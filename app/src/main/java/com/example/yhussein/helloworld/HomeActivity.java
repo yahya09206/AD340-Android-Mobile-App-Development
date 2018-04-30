@@ -13,7 +13,7 @@ import org.w3c.dom.Text;
 public class HomeActivity extends AppCompatActivity {
 
     TextView thanks;
-//    TextView profilename;
+    TextView profilename;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
         thanks = findViewById(R.id.thanks);
-//        profilename = findViewById(R.id.name);
+        profilename = findViewById(R.id.name);
 //        profileage = findViewById(R.id.age);
 //        profilejob = findViewById(R.id.occupation);
 //        profileinfo = findViewById(R.id.description);
@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = this.getIntent();
         //get username
         String username = intent.getStringExtra(getString(R.string.username));
-//        String name = intent.getStringExtra(getString(R.string.name));
+        String name = intent.getStringExtra(getString(R.string.name));
 //        String age = intent.getStringExtra(getString(R.string.age));
 //        String job = intent.getStringExtra(getString(R.string.occupation));
 //        String info = intent.getStringExtra(getString(R.string.description));
@@ -45,7 +45,7 @@ public class HomeActivity extends AppCompatActivity {
 //
 //        //set text
         thanks.setText(getString(R.string.thanks) + " " +username+"!");
-//        profilename.setText(name);
+        profilename.setText(getString(R.string.name));
 //        profileage.setText(age);
 //        profilejob.setText(job);
 //        profileinfo.setText(info);
