@@ -4,6 +4,7 @@
     <string name="doberr">You are not allowed to signup, you\'re under 18 according to your date of birth!</string>
     <string name="dobmsg">You entered an invalid date of birth!</string>
     <string name="usernameerror">Username required!</string>
+    <string name="nameerror">Name Required!</string>
     <string name="emailerror">Invalid email!</string>
     <string name="thanks">Thanks for Signing Up </string>
     <string name="name">Name</string>
@@ -15,6 +16,7 @@
     <string name="createnew">Create New Account</string>
     <string name="description">Description</string>
     <string name="occupation">Occupation</string>
+    <string name="proname">Name: </string>
     <!--<string name="hello">Hello World</string>-->
     <!--<string name="full_info">Full Info</string>-->
     <!--<string name="info">Yahya Hussein. Created 4-6-2018. I love shrimp pad thai(spicy).</string>-->

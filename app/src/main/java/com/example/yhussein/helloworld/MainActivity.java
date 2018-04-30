@@ -73,6 +73,14 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        //gets name
+        String name = nameET.getText().toString();
+        if(name.length() == 0)
+        {
+            Toast.makeText(this, R.string.nameerror, Toast.LENGTH_LONG).show();
+            return;
+        }
+
 
         //validate email
         String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";

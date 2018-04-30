@@ -12,8 +12,7 @@ import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity {
 
-    TextView thanks;
-    TextView profilename;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +20,14 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
 
+
 //        TextView profileage;
 //        TextView profilejob;
 //        TextView profileinfo;
 
 
-        thanks = findViewById(R.id.thanks);
-        profilename = findViewById(R.id.name);
+        TextView thanks = findViewById(R.id.thanks);
+        TextView profilename = findViewById(R.id.name);
 //        profileage = findViewById(R.id.age);
 //        profilejob = findViewById(R.id.occupation);
 //        profileinfo = findViewById(R.id.description);
@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = this.getIntent();
         //get username
         String username = intent.getStringExtra(getString(R.string.username));
-        String name = intent.getStringExtra(getString(R.string.name));
+        String name = intent.getStringExtra(getString(R.string.proname));
 //        String age = intent.getStringExtra(getString(R.string.age));
 //        String job = intent.getStringExtra(getString(R.string.occupation));
 //        String info = intent.getStringExtra(getString(R.string.description));
@@ -45,7 +45,7 @@ public class HomeActivity extends AppCompatActivity {
 //
 //        //set text
         thanks.setText(getString(R.string.thanks) + " " +username+"!");
-        profilename.setText(getString(R.string.name));
+        profilename.setText(getString(R.string.proname) + name);
 //        profileage.setText(age);
 //        profilejob.setText(job);
 //        profileinfo.setText(info);
