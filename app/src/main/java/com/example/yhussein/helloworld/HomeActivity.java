@@ -44,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
 //
 //
 //        //set text
-        thanks.setText(getString(R.string.thanks)+username+"!");
+        thanks.setText(getString(R.string.thanks) + " " +username+"!");
 //        profilename.setText(name);
 //        profileage.setText(age);
 //        profilejob.setText(job);

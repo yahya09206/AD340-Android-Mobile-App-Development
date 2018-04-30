@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSubmit(View view) {
-        //validate date
-        SimpleDateFormat sdf = new SimpleDateFormat(getString(R.string.dob));
+        //validate dateji
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
         String dateStr = dobET.getText().toString();
         try
         {
