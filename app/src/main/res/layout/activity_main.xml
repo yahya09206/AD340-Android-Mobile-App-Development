@@ -18,40 +18,40 @@
             android:text="@string/filename"
             android:layout_marginBottom="8dp"/>
 
-            <EditText
-                android:id="@+id/name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="@string/name" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/name" />
 
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="@string/email" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email" />
 
-            <EditText
-                android:id="@+id/username"
-                android:inputType="textPersonName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/username" />
+        <EditText
+            android:id="@+id/username"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username" />
 
-            <EditText
-                android:id="@+id/age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="@string/age" />
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/age" />
 
-            <EditText
-                android:id="@+id/dob"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="date"
-                android:hint="@string/dob" />
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="@string/dob" />
 
 
         <Button
@@ -63,6 +63,7 @@
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
+
 
 
     <!--old-->

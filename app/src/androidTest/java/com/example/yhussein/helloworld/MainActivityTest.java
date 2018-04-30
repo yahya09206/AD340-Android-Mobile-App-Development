@@ -30,12 +30,4 @@ public class MainActivityTest {
     @Rule
     public ActivityTestRule<MainActivity> testRule = new ActivityTestRule<>(MainActivity.class);
 
-    @Test
-    public void fullInfo(){
-
-        ViewInteraction nameET = onView(
-                allOf(withId(R.id.username), withText("Username"), isDisplayed()));
-        nameET.check(matches(isDisplayed()));
-    }
-
 }
