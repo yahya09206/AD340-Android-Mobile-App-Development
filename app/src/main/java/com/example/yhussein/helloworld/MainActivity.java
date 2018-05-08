@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSubmit(View view) {
-        //validate dateji
+        //validate date
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
         String dateStr = dobET.getText().toString();
         try
@@ -102,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HomeActivity.class);
         //pass username
         intent.putExtra(getString(R.string.username), username);
+        //pass name
+        intent.putExtra(getString(R.string.name), name);
         //start
         this.startActivity(intent);
     }

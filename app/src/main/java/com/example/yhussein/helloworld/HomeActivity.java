@@ -27,7 +27,8 @@ public class HomeActivity extends AppCompatActivity {
 
 
         TextView thanks = findViewById(R.id.thanks);
-        TextView profilename = findViewById(R.id.name);
+        TextView profilename = findViewById(R.id.nametwo);
+
 //        profileage = findViewById(R.id.age);
 //        profilejob = findViewById(R.id.occupation);
 //        profileinfo = findViewById(R.id.description);
@@ -37,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = this.getIntent();
         //get username
         String username = intent.getStringExtra(getString(R.string.username));
-        String name = intent.getStringExtra(getString(R.string.proname));
+        String name = intent.getStringExtra(getString(R.string.name));
 //        String age = intent.getStringExtra(getString(R.string.age));
 //        String job = intent.getStringExtra(getString(R.string.occupation));
 //        String info = intent.getStringExtra(getString(R.string.description));
