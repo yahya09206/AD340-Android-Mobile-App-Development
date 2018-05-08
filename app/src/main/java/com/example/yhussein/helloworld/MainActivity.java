@@ -81,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        //gets age
+        String age = ageET.getText().toString();
+
 
         //validate email
         String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
@@ -104,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(getString(R.string.username), username);
         //pass name
         intent.putExtra(getString(R.string.name), name);
+        intent.putExtra(getString(R.string.age), age);
         //start
         this.startActivity(intent);
     }
