@@ -19,17 +19,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
-
-//        TextView profileage;
-//        TextView profilejob;
-//        TextView profileinfo;
-
-
         TextView thanks = findViewById(R.id.thanks);
         TextView profilename = findViewById(R.id.nametwo);
         TextView profileage = findViewById(R.id.agetwo);
-//        profilejob = findViewById(R.id.occupation);
+        TextView profilejob = findViewById(R.id.occupation);
 //        profileinfo = findViewById(R.id.description);
 
 
@@ -39,8 +32,7 @@ public class HomeActivity extends AppCompatActivity {
         String username = intent.getStringExtra(getString(R.string.username));
         String name = intent.getStringExtra(getString(R.string.name));
         String age = intent.getStringExtra(getString(R.string.age));
-//        String age = intent.getStringExtra(getString(R.string.age));
-//        String job = intent.getStringExtra(getString(R.string.occupation));
+        String job = intent.getStringExtra(getString(R.string.occupation));
 //        String info = intent.getStringExtra(getString(R.string.description));
 //
 //
@@ -48,8 +40,7 @@ public class HomeActivity extends AppCompatActivity {
         thanks.setText(getString(R.string.thanks) + " " +username+"!");
         profilename.setText(getString(R.string.proname) + name);
         profileage.setText(getString(R.string.proage) + age);
-//        profileage.setText(age);
-//        profilejob.setText(job);
+        profilejob.setText(getString(R.string.projob) + job);
 //        profileinfo.setText(info);
 
 

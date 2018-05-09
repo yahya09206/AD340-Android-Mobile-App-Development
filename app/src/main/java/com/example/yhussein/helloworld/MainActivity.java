@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText usernameET;
     private EditText ageET;
     private EditText dobET;
+    private EditText jobET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         usernameET =  findViewById(R.id.username);
         ageET =  findViewById(R.id.age);
         dobET = findViewById(R.id.dob);
+        jobET = findViewById(R.id.job);
 
 
     }
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
         //gets age
         String age = ageET.getText().toString();
+        String job = jobET.getText().toString();
 
 
         //validate email
@@ -108,6 +111,8 @@ public class MainActivity extends AppCompatActivity {
         //pass name
         intent.putExtra(getString(R.string.name), name);
         intent.putExtra(getString(R.string.age), age);
+        intent.putExtra(getString(R.string.occupation), job);
+
         //start
         this.startActivity(intent);
     }

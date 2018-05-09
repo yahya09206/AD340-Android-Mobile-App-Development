@@ -53,6 +53,13 @@
             android:inputType="date"
             android:hint="@string/dob" />
 
+        <EditText
+            android:id="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/occupation" />
+
 
         <Button
             android:layout_margin="32dp"
