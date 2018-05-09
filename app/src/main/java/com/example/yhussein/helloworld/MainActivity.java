@@ -86,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
         //gets age
         String age = ageET.getText().toString();
         String job = jobET.getText().toString();
+        if(job.length() == 0)
+        {
+            Toast.makeText(this, R.string.joberror, Toast.LENGTH_LONG).show();
+            return;
+        }
 
 
         //validate email
@@ -111,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         //pass name
         intent.putExtra(getString(R.string.name), name);
         intent.putExtra(getString(R.string.age), age);
-        intent.putExtra(getString(R.string.occupation), job);
+        intent.putExtra(getString(R.string.job), job);
 
         //start
         this.startActivity(intent);

@@ -22,7 +22,7 @@ public class HomeActivity extends AppCompatActivity {
         TextView thanks = findViewById(R.id.thanks);
         TextView profilename = findViewById(R.id.nametwo);
         TextView profileage = findViewById(R.id.agetwo);
-        TextView profilejob = findViewById(R.id.occupationtwo);
+        TextView profilejob = findViewById(R.id.jobtwo);
 //        profileinfo = findViewById(R.id.description);
 
 
@@ -32,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
         String username = intent.getStringExtra(getString(R.string.username));
         String name = intent.getStringExtra(getString(R.string.name));
         String age = intent.getStringExtra(getString(R.string.age));
-        String job = intent.getStringExtra(getString(R.string.occupation));
+        String job = intent.getStringExtra(getString(R.string.job));
 //        String info = intent.getStringExtra(getString(R.string.description));
 //
 //
