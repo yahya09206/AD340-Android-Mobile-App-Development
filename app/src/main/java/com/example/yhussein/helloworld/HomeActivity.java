@@ -22,7 +22,7 @@ public class HomeActivity extends AppCompatActivity {
         TextView thanks = findViewById(R.id.thanks);
         TextView profilename = findViewById(R.id.nametwo);
         TextView profileage = findViewById(R.id.agetwo);
-        TextView profilejob = findViewById(R.id.occupation);
+        TextView profilejob = findViewById(R.id.occupationtwo);
 //        profileinfo = findViewById(R.id.description);
 
 
