@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText ageET;
     private EditText dobET;
     private EditText jobET;
+    private EditText descriptionET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         ageET =  findViewById(R.id.age);
         dobET = findViewById(R.id.dob);
         jobET = findViewById(R.id.job);
+        descriptionET = findViewById(R.id.description);
 
 
     }
@@ -89,6 +91,13 @@ public class MainActivity extends AppCompatActivity {
         if(job.length() == 0)
         {
             Toast.makeText(this, R.string.joberror, Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        String description = jobET.getText().toString();
+        if(job.length() == 0)
+        {
+            Toast.makeText(this, R.string.descripterror, Toast.LENGTH_LONG).show();
             return;
         }
 

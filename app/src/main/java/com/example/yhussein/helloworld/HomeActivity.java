@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         TextView profilename = findViewById(R.id.nametwo);
         TextView profileage = findViewById(R.id.agetwo);
         TextView profilejob = findViewById(R.id.jobtwo);
-//        profileinfo = findViewById(R.id.description);
+        TextView profileinfo = findViewById(R.id.description);
 
 
         //get intent used to start activity
@@ -33,15 +33,14 @@ public class HomeActivity extends AppCompatActivity {
         String name = intent.getStringExtra(getString(R.string.name));
         String age = intent.getStringExtra(getString(R.string.age));
         String job = intent.getStringExtra(getString(R.string.job));
-//        String info = intent.getStringExtra(getString(R.string.description));
-//
-//
-//        //set text
+        String info = intent.getStringExtra(getString(R.string.description));
+
+        //set text
         thanks.setText(getString(R.string.thanks) + " " +username+"!");
         profilename.setText(getString(R.string.proname) + name);
         profileage.setText(getString(R.string.proage) + age);
         profilejob.setText(getString(R.string.projob) + job);
-//        profileinfo.setText(info);
+        profileinfo.setText(getString(R.string.prodescription) + info);
 
 
     }
