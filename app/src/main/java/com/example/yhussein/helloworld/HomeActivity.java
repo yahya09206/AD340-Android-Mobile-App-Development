@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         TextView profilename = findViewById(R.id.nametwo);
         TextView profileage = findViewById(R.id.agetwo);
         TextView profilejob = findViewById(R.id.jobtwo);
-        TextView profileinfo = findViewById(R.id.description);
+        TextView profileinfo = findViewById(R.id.descriptiontwo);
 
 
         //get intent used to start activity
