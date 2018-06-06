@@ -16,6 +16,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.Espresso.pressBack;
 import static android.support.test.espresso.action.ViewActions.click;
@@ -24,6 +25,7 @@ import static android.support.test.espresso.action.ViewActions.pressImeActionBut
 import static android.support.test.espresso.action.ViewActions.replaceText;
 import static android.support.test.espresso.action.ViewActions.swipeLeft;
 import static android.support.test.espresso.action.ViewActions.swipeRight;
+import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withClassName;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
@@ -38,7 +40,7 @@ public class StartActivityTest {
     @Rule
     public ActivityTestRule<StartActivity> mActivityTestRule = new ActivityTestRule<>(StartActivity.class);
 
-    @Test
+
     public void startActivityTest() {
         // Added a sleep statement to match the app's execution delay.
         // The recommended way to handle such scenarios is to use Espresso idling resources:
@@ -299,9 +301,7 @@ public class StartActivityTest {
 
         ViewInteraction tabView3 = onView(
                 allOf(childAtPosition(
-                        childAtPosition(
-                                withId(R.id.tabLayout),
-                                0),
+                        childAtPosition(withId(R.id.tabLayout), 0),
                         0),
                         isDisplayed()));
         tabView3.perform(click());
@@ -317,6 +317,37 @@ public class StartActivityTest {
         viewPager3.perform(swipeRight());
 
     }
+
+    @Test
+    public void testFirstSwipeLeft(){
+        onView(withId(R.id.pager)).perform(swipeLeft());
+        childAtPosition(withId(R.id.tabLayout), 1).matches(isDisplayed());
+    }
+
+    @Test
+    public void testSecondSwipeLeft(){
+        onView(withId(R.id.pager)).perform(swipeLeft());
+        onView(withId(R.id.pager)).perform(swipeLeft());
+        childAtPosition(withId(R.id.tabLayout), 2).matches(isDisplayed());
+    }
+
+
+    @Test
+    public void testThirdOrMoreSwipeLeft(){
+        onView(withId(R.id.pager)).perform(swipeLeft());
+        onView(withId(R.id.pager)).perform(swipeLeft());
+        onView(withId(R.id.pager)).perform(swipeLeft());
+        childAtPosition(withId(R.id.tabLayout), 2).matches(isDisplayed());
+    }
+
+
+//    @Test
+//    public void testTabClicks(){
+//       onView(childAtPosition(withId(R.id.tabLayout), 0)).perform(click());
+//
+//       onData(withId(0)).check(matches(isDisplayed()));
+//       //childAtPosition(withId(R.id.tabLayout), 2).matches(isDisplayed());
+//    }
 
     private static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {

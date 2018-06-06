@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         //start a new activity
 
         //create intent
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, StartActivity.class);
         //pass username
         intent.putExtra(getString(R.string.username), username);
         //pass name

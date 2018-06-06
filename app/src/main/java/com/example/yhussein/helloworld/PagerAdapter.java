@@ -28,6 +28,11 @@ public class PagerAdapter extends FragmentPagerAdapter{
     }
 
     @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
     public int getCount() {
         return tabsCount;
     }
