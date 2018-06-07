@@ -74,14 +74,6 @@ public class MainActivityTest {
        onView(withId(R.id.age)).check(matches(withInputType(InputType.TYPE_CLASS_NUMBER)));
     }
 
-    @Test
-    public void checkNameField(){
-
-        //Check the name field is a text inout field
-
-        onView(withId(R.id.name)).check(matches(withInputType(InputType.TYPE_CLASS_TEXT)));
-    }
-
     //Check on submit button clicked with scenerios
     @Test
     public void onSubmitWithInValidDate() {
