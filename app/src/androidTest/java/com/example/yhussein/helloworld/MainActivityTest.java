@@ -43,12 +43,12 @@ public class MainActivityTest {
         onView(withId(R.id.description)).check(matches(isDisplayed()));
     }
 
-    @Test
-    public void testTabDisplay() {
-        onView(withId(R.id.tabLayout))
-                .perform(click())
-                .check(matches(isDisplayed()));
-    }
+//    @Test
+//    public void testTabDisplay() {
+//        onView(withId(R.id.tabLayout))
+//                .perform(click())
+//                .check(matches(isDisplayed()));
+//    }
 
     @Test
     public void checkAgeField(){
