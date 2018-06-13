@@ -74,8 +74,6 @@ public class MainActivityTest {
     }
 
 
-
-
     @Test
     public void checkUsernameField(){
 
@@ -90,9 +88,6 @@ public class MainActivityTest {
         //Check the age field is a number inout field
         onView(withId(R.id.name)).check(matches(withInputType(InputType.TYPE_CLASS_TEXT)));
     }
-
-
-
 
 
     //Check on submit button clicked with scenerios
