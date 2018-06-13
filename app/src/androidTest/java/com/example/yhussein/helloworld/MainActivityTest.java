@@ -70,9 +70,24 @@ public class MainActivityTest {
     public void checkAgeField(){
 
         //Check the age field is a number inout field
-
        onView(withId(R.id.age)).check(matches(withInputType(InputType.TYPE_CLASS_NUMBER)));
     }
+
+    @Test
+    public void checkDateField(){
+
+        //Check the age field is a date/time field
+        onView(withId(R.id.dob)).check(matches(withInputType(InputType.TYPE_CLASS_DATETIME)));
+    }
+
+    @Test
+    public void checkUsernameField(){
+
+        //Check the age field is a number inout field
+        onView(withId(R.id.username)).check(matches(withInputType(InputType.TYPE_CLASS_TEXT)));
+    }
+
+
 
     //Check on submit button clicked with scenerios
     @Test
