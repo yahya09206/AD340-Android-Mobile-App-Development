@@ -73,12 +73,6 @@ public class MainActivityTest {
        onView(withId(R.id.age)).check(matches(withInputType(InputType.TYPE_CLASS_NUMBER)));
     }
 
-    @Test
-    public void checkDateField(){
-
-        //Check the age field is a date/time field
-        onView(withId(R.id.dob)).check(matches(withInputType(InputType.TYPE_CLASS_DATETIME)));
-    }
 
     @Test
     public void checkUsernameField(){
