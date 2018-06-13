@@ -47,6 +47,7 @@ public class ProfileFragment extends Fragment {
         profilejob.setText(getString(R.string.projob) + ((StartActivity)getActivity()).job);
         profileinfo.setText(getString(R.string.prodescription) + ((StartActivity)getActivity()).info);
 
+
         return view;
     }
 
