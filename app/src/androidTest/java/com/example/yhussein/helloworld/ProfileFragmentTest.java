@@ -12,6 +12,7 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static org.hamcrest.core.AllOf.allOf;
 import static org.junit.Assert.*;
 
 public class ProfileFragmentTest {
@@ -21,17 +22,17 @@ public class ProfileFragmentTest {
 
     @Test
     public void fieldsAreVisible(){
-        onView(withId(R.id.thanks)).check(matches(isDisplayed()));
-        onView(withId(R.id.img)).check(matches(isDisplayed()));
-        onView(withId(R.id.nametwo)).check(matches(isDisplayed()));
-        onView(withId(R.id.agetwo)).check(matches(isDisplayed()));
-        onView(withId(R.id.descriptiontwo)).check(matches(isDisplayed()));
-        onView(withId(R.id.jobtwo)).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.thanks))).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.img))).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.nametwo))).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.agetwo))).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.descriptiontwo))).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.jobtwo))).check(matches(isDisplayed()));
     }
 
     @Test
     public void testCreateNewAccount(){
-        onView(withId(R.id.button)).perform(click());
+        onView(allOf(withId(R.id.button))).perform(click());
         assertTrue(fragmentTestRule.getFragment().getActivity().isDestroyed());
     }
 
