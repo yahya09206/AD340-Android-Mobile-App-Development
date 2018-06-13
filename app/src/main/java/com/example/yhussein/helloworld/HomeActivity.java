@@ -12,12 +12,10 @@ import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        //setContentView(R.layout.activity_home);
 
         TextView thanks = findViewById(R.id.thanks);
         TextView profilename = findViewById(R.id.nametwo);

@@ -27,4 +27,13 @@
     <!--<string name="hello">Hello World</string>-->
     <!--<string name="full_info">Full Info</string>-->
     <!--<string name="info">Yahya Hussein. Created 4-6-2018. I love shrimp pad thai(spicy).</string>-->
+    <string-array name="accounTypes" >
+        <item>Private</item>
+        <item>Public</item>
+    </string-array>
+
+    <string-array name="genders" >
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
 </resources>
