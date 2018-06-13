@@ -23,6 +23,7 @@
     <string name="joberror">please enter a job title</string>
     <string name="descripterror">please enter a description</string>
     <string name="prodescription">Description:</string>
+    <string name="likebutton">LIKE</string>
 
     <!--<string name="hello">Hello World</string>-->
     <!--<string name="full_info">Full Info</string>-->

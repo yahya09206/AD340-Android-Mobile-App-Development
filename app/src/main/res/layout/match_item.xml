@@ -27,7 +27,7 @@
                     android:id="@+id/likeBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LIKE"
+                    android:text="@string/likebutton"
                     android:textColor="@color/colorPrimary"
                     style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
 

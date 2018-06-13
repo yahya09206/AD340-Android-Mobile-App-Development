@@ -1,21 +1,9 @@
 package com.example.yhussein.helloworld;
 
-import android.content.Intent;
-import android.support.test.espresso.ViewAction;
-import android.support.test.espresso.ViewInteraction;
-import android.support.test.espresso.intent.Intents;
 import android.support.test.espresso.intent.rule.IntentsTestRule;
-import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
-import android.test.suitebuilder.annotation.LargeTest;
 import android.text.InputType;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewParent;
 
-import org.hamcrest.Description;
-import org.hamcrest.Matcher;
-import org.hamcrest.TypeSafeMatcher;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,25 +14,14 @@ import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard
 import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.intent.Intents.intended;
-import static android.support.test.espresso.intent.matcher.BundleMatchers.hasEntry;
-import static android.support.test.espresso.intent.matcher.IntentMatchers.hasAction;
-import static android.support.test.espresso.intent.matcher.IntentMatchers.hasCategories;
 import static android.support.test.espresso.intent.matcher.IntentMatchers.hasComponent;
-import static android.support.test.espresso.intent.matcher.IntentMatchers.hasData;
-import static android.support.test.espresso.intent.matcher.IntentMatchers.hasExtras;
-import static android.support.test.espresso.intent.matcher.IntentMatchers.toPackage;
-import static android.support.test.espresso.intent.matcher.UriMatchers.hasHost;
 import static android.support.test.espresso.matcher.RootMatchers.withDecorView;
-import static android.support.test.espresso.matcher.ViewMatchers.isClickable;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withInputType;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static org.hamcrest.CoreMatchers.allOf;
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
-import static org.hamcrest.core.IsCollectionContaining.hasItem;
 
 
 @RunWith(AndroidJUnit4.class)
@@ -64,6 +41,13 @@ public class MainActivityTest {
         onView(withId(R.id.age)).check(matches(isDisplayed()));
         onView(withId(R.id.dob)).check(matches(isDisplayed()));
         onView(withId(R.id.description)).check(matches(isDisplayed()));
+    }
+
+    @Test
+    public void testTabDisplay() {
+        onView(withId(R.id.tabLayout))
+                .perform(click())
+                .check(matches(isDisplayed()));
     }
 
     @Test
