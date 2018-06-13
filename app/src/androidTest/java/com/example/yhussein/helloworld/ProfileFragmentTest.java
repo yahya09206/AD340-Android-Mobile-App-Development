@@ -10,6 +10,8 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static org.hamcrest.Matchers.allOf;
+
 
 public class ProfileFragmentTest {
 
@@ -23,15 +25,15 @@ public class ProfileFragmentTest {
                 .check(matches(isDisplayed()));
     }
 
-//    @Test
-//    public void fieldsAreVisible(){
+    @Test
+    public void fieldsAreVisible(){
 //        onView(allOf(withId(R.id.thanks))).check(matches(isDisplayed()));
 //        onView(allOf(withId(R.id.img))).check(matches(isDisplayed()));
-//        onView(allOf(withId(R.id.nametwo))).check(matches(isDisplayed()));
-//        onView(allOf(withId(R.id.agetwo))).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.nametwo))).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.agetwo))).check(matches(isDisplayed()));
 //        onView(allOf(withId(R.id.descriptiontwo))).check(matches(isDisplayed()));
 //        onView(allOf(withId(R.id.jobtwo))).check(matches(isDisplayed()));
-//    }
+    }
 //
 //    @Test
 //    public void testCreateNewAccount(){
